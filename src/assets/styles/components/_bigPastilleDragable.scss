@@ -1,0 +1,68 @@
+.bigPastilleDragable {
+        position: relative;
+        width: 353px;
+        height: 353px;
+    &-content {
+        overflow: hidden;
+        position: relative;
+        width: 353px;
+        height: 353px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        box-shadow: 0px 0px 8px rgba(45, 47, 44, 0.1);
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_title{
+            // color: $teksialGrey;
+            width: calc(353px - 117px);
+            // line-height: 0.4;
+        }
+        &_list{
+            position: absolute;
+            top: 295px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 353px;
+            height: 353px;
+            border-radius: 50%;
+            background: #75C5E7;
+            text-align: center;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .6s .15s cubic-bezier(.17,.67,.5,1.03);
+            &:hover {
+                top: 0;
+                & img {
+                    transform: rotate(180deg);
+                }
+            }
+            & img {
+                position: absolute;
+                top: 0;
+                margin-top: 20px;
+                transition: transform 350ms;
+            }
+            & p {
+                // margin-top: 60px;
+                font-weight: 500;
+                // font-size: 22px;
+            }
+            & ul {
+                margin: auto 50px;
+                & li{
+                    list-style-type: circle;
+                    margin-bottom: 20px;
+                    color: #FFFFFF;
+                    font-weight: 500;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

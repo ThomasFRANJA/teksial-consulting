@@ -1,0 +1,128 @@
+extends ../layouts/master.pug
+
+block title
+  title Page - Tous les composants
+
+block basicSeo
+  meta(name='description' content='Tous les composants')
+  meta(name='author' content='')
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+    //- components Header
+    +header()
+
+    //- components Intro
+    +intro('all-components')
+        block introContent
+            //- components TitleLeftTxt
+            +titleLeftTxt('', 'tous les', 'composants', 'Découvrez tous les composants créer pour le site web')
+
+    //- compoenents TitleCenter
+    section(style='background-color: #009FE3;').container-fluid
+        +titleCenterTxt()
+            //- add empty div bottom to mixin for only title
+            //- Example: .classname = div empty
+
+
+    //- components buttons
+    
+    //- components LittlePastille
+    section(style='text-align: center; margin: 50px 0').container-fluid
+        h2 Components little pastille
+        .row.center-xs
+            .col-xs-3(style='margin: 80px auto;')
+                +littlePastille()
+            .col-xs-3(style='margin: 80px auto;')
+                +littlePastille('', 'tc-components-lb-call.svg')
+            .col-xs-3(style='margin: 80px auto;')
+                +littlePastille('', 'tc-components-lb-success.svg')
+
+    //- components LittlePastille + BigPastille
+    section(style='text-align: center; margin: 50px 0').container-fluid
+        h2 Components little + big pastille
+        .row.center-xs
+            .col-xs-3(style='margin: 80px auto;')
+                +bigPastille()
+            .col-xs-3(style='margin: 80px auto;')
+                +bigPastille('90', 'Consultants', 'picture2')
+            .col-xs-3(style='margin: 80px auto;')
+                +bigPastille('85', '% Croissance', 'picture3')
+
+    //- components LittlePastille + BigPastilleDragable
+    section(style='text-align: center; margin: 50px 0').container-fluid
+        h2 Components little + big pastille dragable
+        .row.center-xs
+            .col-xs-3(style='margin: 80px auto;')
+                +bigPastilleDragable()
+            .col-xs-3(style='margin: 80px auto;')
+                +bigPastilleDragable('Sécuriser vos solutions avec notre expertise', 'picture2', 'security')
+            .col-xs-3(style='margin: 80px auto;')
+                +bigPastilleDragable('Accélérer votre business avec des solutions adaptées à vos besoins', 'picture3', 'speed up')
+
+    //- components Picture item text
+    section(style='text-align: center; margin: 50px 0').container-fluid
+        h2 Components picture item text
+        .row.center-xs
+            .col-xs-3(style='margin: 80px auto;')
+                +pictureitem()
+                    p
+            .col-xs-3(style='margin: 80px auto;')
+                +pictureitem('', 'tc-home-section04-item02.png', 'Développement de solutions')
+                    p
+            .col-xs-3(style='margin: 80px auto;')
+                +pictureitem('', 'tc-home-section04-item03.png', 'Maintenance')
+                    p
+            .col-xs-3(style='margin: 80px auto;')
+                +pictureitem('', 'tc-home-section04-item04.png', "Digitale & Marketing")
+                    p
+
+    //- components label Icon
+    section(style='text-align: center; margin: 50px 0').container-fluid
+        h2 Components label icon(card offers)
+        .row.center-xs
+            .col-xs-4(style='margin: 80px auto;')
+                    +labelIcon('tc-components-contractIcon.svg', 'CDI')
+            .col-xs-4(style='margin: 80px auto;')
+                    +labelIcon('tc-components-experience.svg', '3ans minimum')
+            .col-xs-4(style='margin: 80px auto;')
+                    +labelIcon('tc-components-location.svg')
+
+    //- Components Card Offers
+    section(style='text-align: center; margin: 50px 0').container-fluid
+        h2 Components card offers
+        .row.center-xs
+            .col-xs-6(style='margin: 80px auto;')
+                +cardOffers()
+            .col-xs-6(style='margin: 80px auto;')
+                +cardOffers()
+
+    //- components Linkedin
+    section(style='text-align: center; margin: 50px 0').container-fluid
+        h2 Components Linkedin profil
+        .row.center-xs
+            .col-xs-2(style='margin: 80px auto;')
+                +pastilleLinkedin('LL')
+            .col-xs-2(style='margin: 80px auto;')
+                +pastilleLinkedin('JM', 'Chargé de missions', 'Jacqueline MARTIN')
+            .col-xs-2(style='margin: 80px auto;')
+                +pastilleLinkedin('NQ', 'Chargé de missions', 'Naoile QALLOUH')
+            .col-xs-2(style='margin: 80px auto;')
+                +pastilleLinkedin('TF', 'Chargé de Comm & Marketing', 'Thomas FRANJA')
+            .col-xs-2(style='margin: 80px auto;')
+                +pastilleLinkedin()
+
+    //- components Bandeau
+    section(style='text-align: center;')
+        h2 Components Bandeau Link
+        +bandeau()
+
+    //- components Card tag different
+    //- components Slider trust us
+
+    //- components Footer
+    +footer()

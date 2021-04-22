@@ -1,0 +1,6 @@
+mixin button(href, title='Contact', theme)
+    a(href=href)
+        button(
+            type='button'
+            class=theme === 'white' ? 'white' : 'blue'
+            ).button #{title}

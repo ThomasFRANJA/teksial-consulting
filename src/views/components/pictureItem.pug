@@ -1,0 +1,15 @@
+mixin pictureitem(theme, img='tc-home-section04-item01.png', titleInfos='Gestion de projets', txtInfos='Optimisez, simplifiez & digitalisé')
+    .pictureItem
+        figure
+            img(
+                src=require(`images/${img}`) 
+                alt=`picture of ${img}`
+                )
+        .pictureItem-description(
+            class=theme === 'white' ? 'white' : ''
+            )
+            h3 #{titleInfos}
+            if !block
+                p #{txtInfos}
+            else
+                block

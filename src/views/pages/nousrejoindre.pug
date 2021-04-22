@@ -1,0 +1,26 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - Nous rejoindre
+
+block basicSeo
+  meta(name='description' content='Nos offres page')
+  meta(name='author' content='')
+
+block manifestBrowserconfigFiles
+  link(rel='manifest', href='../manifest.json')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  //- Header
+  +header('nousrejoindre')
+
+  //- Section Intro
+  +intro('nsrejoindre')
+    block introContent
+
+  //- Desktop page
+  section
+    h1 nous rejoindre
+

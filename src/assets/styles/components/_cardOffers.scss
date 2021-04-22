@@ -1,0 +1,40 @@
+.cardOffers {
+    padding: 30px;
+    box-shadow: 0px 0px 8px rgba(45, 47, 44, 0.1);
+    font-weight: 700;
+    text-align: left;
+    // min-height: 442px;
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+        & span {
+            font-size: 17px;
+            font-weight: 600;
+        }
+    }
+
+    &-informations{
+        margin-bottom: 36px;
+        & h4 {
+            font-size: 24px;
+            color: $teksialBlue;
+            line-height: 30px;
+            margin-top: 10px;
+        }
+        & span {
+            color: $teksialGrey;
+            font-weight: 400;
+        }
+    }
+
+    &-poste {
+        &_item:nth-child(3){
+            margin-top: 30px;
+        }
+    }
+
+    &-links {
+        margin-top: 30px;
+    }
+}

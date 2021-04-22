@@ -1,0 +1,13 @@
+mixin bigPastille(numberValue="30", textValue="ans d'\expérience", urlPicture)
+    .bigPastille
+        .bigPastille_title
+            h2=numberValue
+                |
+                span=textValue
+        if urlPicture === 'picture2'
+            +littlePastille('absolute', 'tc-components-lb-call.svg')
+        else if urlPicture === 'picture3'
+            +littlePastille('absolute', 'tc-components-lb-success.svg')
+        else
+            +littlePastille('absolute')
+        

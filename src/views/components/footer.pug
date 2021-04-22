@@ -1,4 +1,93 @@
 //- src/views/components/footer.pug
-
-footer.footer
-  p By #[a(href='https://edgardorl.com') Edgardo], Repo #[a(href='https://github.com/SoldierCorp/webpack-starter-pug-sass-es6-jquery') GitHub], Support 🧡 #[a(href='https://github.com/sponsors/SoldierCorp') Donate]
+mixin footer()
+  footer.footer.container-fluid
+    .row
+      .footer-company.col-xs-4
+        figure
+          img.footer-company_logo(
+            src=require('images/tc-glb-logo-InColor.svg')
+            alt='logo Consulting footer'
+          )
+        p 54 avenue Jean Jaurès, 
+          |
+          br
+          | 92700 Colombes
+        .footer-company_contact
+          p Ludovic LAPLACE
+            |
+            br
+            | R.Département Consulting
+          address
+            a(
+              href='tel:+33633733260'
+            ) 
+              p +33 6 33 73 32 60
+            a(
+              href='mailto:management-consulting@teksial.com'
+            ) 
+              p consulting-management@teksial.com
+          .footer-company_rs
+            a(
+              href='#'
+            )
+              figure
+                img(
+                  src=require('images/tc-glb-linkedin-disabled.svg')
+                  alt='logo réseaux sociaux linkedin'
+                )
+            a(
+              href='#'
+            )
+              figure
+                img(
+                  src=require('images/tc-glb-twitter-disabled.svg')
+                  alt='logo réseaux sociaux twitter'
+                )
+      .footer-menu.col-xs-8
+        .footer-menu-item
+          a(href='#').footer-menu-item_title A propos
+          ul.footer-menu-item_list
+            li
+              a(href='#') Item 1
+            li
+              a(href='#') Item 2
+            li
+              a(href='#') Item 3
+            li
+              a(href='#') Item 4
+        .footer-menu-item
+          a(href='#').footer-menu-item_title Nos offres
+          ul.footer-menu-item_list
+            li
+              a(href='#') Item 1
+            li
+              a(href='#') Item 2
+            li
+              a(href='#') Item 3
+        .footer-menu-item
+          a(href='#').footer-menu-item_title Nous rejoindre
+          ul.footer-menu-item_list
+            li
+              a(href='#') Item 1
+            li
+              a(href='#') Item 2
+            li
+              a(href='#') Item 3
+        .footer-menu-item
+          a(href='#').footer-menu-item_title Notre actus
+          ul.footer-menu-item_list
+            li
+              a(href='#') Item 1
+            li
+              a(href='#') Item 2
+            li
+              a(href='#') Item 3
+        .footer-menu-item
+          a(href='#').footer-menu-item_title RSE & ISO
+          ul.footer-menu-item_list
+            li
+              a(href='#') Item 1
+            li
+              a(href='#') Item 2
+        .footer-menu-item
+          a(href='#').footer-menu-item_title Contact

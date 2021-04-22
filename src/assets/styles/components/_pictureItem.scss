@@ -1,0 +1,28 @@
+.pictureItem {
+    & figure {
+        min-height: 145px;
+        & img {
+        max-width: 170px;
+        margin: 0 auto;
+        }
+    }
+    &-description{
+        width: calc(300px - 100px);
+        margin: 50px auto 0;
+        font-size: 18px;
+        & h3 {
+            min-height: 45px;
+            text-transform: uppercase;
+            color: $teksialBlue;
+        }
+        & p {
+            color: $teksialGrey;
+        }
+        &.white {
+            & h3,
+            & p {
+                color: #fff;
+            }
+        }
+    }
+}

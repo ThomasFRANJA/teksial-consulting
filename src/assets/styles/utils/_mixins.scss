@@ -8,7 +8,7 @@
   flex-wrap: $wrap;
 }
 
-@mixin bgImage($url, $repeat: no-repeat, $position: center, $size: initial) {
+@mixin bgImage($url, $repeat: no-repeat, $position: center, $size: cover) {
   background-image: url($url);
   background-repeat: $repeat;
   background-position: $position;

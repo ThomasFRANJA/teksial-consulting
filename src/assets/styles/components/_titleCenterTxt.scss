@@ -1,0 +1,27 @@
+.titleCenter {
+    height: 100%;   
+    &_content {
+        // margin-top: 89px;
+        margin-bottom: 45px;
+        color: #ffffff;
+        &.regGrey{
+            color: $teksialGrey;
+        }
+        & h2{
+            font-size: 24px;
+            margin-bottom: 40px;
+            font-weight: 400;
+            & span{
+                font-size: 40px;
+                font-weight: 700;
+            }
+            & span.blue {
+                color: $teksialBlue;
+            }
+        }
+        & p{
+            margin-top: 35px;
+            line-height: 25px;
+        }
+    }
+}

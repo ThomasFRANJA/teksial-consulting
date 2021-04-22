@@ -4,19 +4,23 @@ block title
   title My Page - Contact
 
 block basicSeo
-  meta(name='description' content='Contact page')
-  meta(name='keywords', content='contact, page')
+  meta(name='description' content='contact page')
   meta(name='author' content='')
 
 block manifestBrowserconfigFiles
-  link(href='../manifest.json', rel='manifest')
+  link(rel='manifest', href='../manifest.json')
   meta(name='msapplication-config' content='../browserconfig.xml')
 
 block content
 
   // Menu
-  +menu('contact')
+  +header('contact')
+
+  //- Section Intro
+  +intro
+    block introContent
 
   //- Desktop page
-  section.page.contact__page
-    h1.page__title # Contact page
+  section
+    h1 nos offres
+

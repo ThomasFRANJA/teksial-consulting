@@ -1,0 +1,43 @@
+include ./titleLeftTxt.pug
+
+mixin intro(background, tagTitle="defaut text tag")
+    if background === 'home'
+        section.intro.container-fluid(class='activeBackgroundHome')
+            .tagTitle.disabled
+                p=tagTitle
+            +titleLeftTxt()
+    else if background === 'apropos'
+        section.intro(class='activeBackgroundAbout')
+            .tagTitle
+                p=background ? 'a propos' : tagTitle
+            block introContent
+    else if background === 'nosoffres'
+        section.intro(class='activeBackgroundOffers')
+            .tagTitle
+                p=background ? 'nos offres' : tagTitle
+            block introContent
+    else if background === 'nsrejoindre'
+        section.intro(class='activeBackgroundJoinUs')
+            .tagTitle
+                p=background ? 'nous rejoindre' : tagTitle
+            block introContent
+    else if background === 'rse&iso'
+        section.intro(class='activeBackgroundRseIso')
+            .tagTitle
+                p=background ? 'rse & iso' : tagTitle
+            block introContent
+    else if background === 'contact'
+        section.intro(class='activeBackgroundContact')
+            .tagTitle
+                p=background ? 'contact' : tagTitle
+            block introContent
+    else if background === 'all-components'
+        section.intro(class='activeBackgroundHome')
+            .tagTitle
+                p=background ? 'all-components' : tagTitle
+            block introContent
+    else
+        section.intro.default
+            block introContent
+
+

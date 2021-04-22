@@ -1,0 +1,23 @@
+mixin cardOffers(trade='Management', poste='Chef de projets', posteDetail='Opérations de terrain H/F')
+    - let newdate = new Intl.DateTimeFormat('fr-FR', options).format(Xmas95).replace(/[/]/g, '.');
+
+    .cardOffers
+        .cardOffers-header
+            span Offre d'emploi
+            span #{newdate}
+        .cardOffers-informations
+            h3 #{trade}
+            h4 #{poste}
+                |
+                br
+                | 
+                span #{posteDetail}
+        .cardOffers-poste.row
+            .cardOffers-poste_item.col-xs-4
+                +labelIcon('tc-components-contractIcon.svg', 'CDI')
+            .cardOffers-poste_item.col-xs-8
+                +labelIcon('tc-components-experience.svg', '3ans minimum')
+            .cardOffers-poste_item.col-xs-12
+                +labelIcon('tc-components-location.svg')
+        .cardOffers-links.end-xs
+            +button('#', 'En savoir plus', 'white')

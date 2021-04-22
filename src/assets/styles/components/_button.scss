@@ -1,17 +1,33 @@
 /* src/assets/styles/components/_button.scss  */
 
-.clean-button {
-  border: none;
-  background: none;
-}
-
 .button {
-  @extend .clean-button;
-  font-family: $quicksand;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 5px;
-  color: white;
-  padding: 14px 40px;
-  background: $lightseagreen;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  position: relative;
+  transition: all ease .3s;
+  cursor: pointer;
+  outline: none;
+  &.blue {
+    border: 1px solid $teksialGrey;
+    color: $teksialGrey;
+    &:hover {
+      background-color: #fff;
+      color: $teksialBlue;
+      font-weight: 600;
+      box-sizing: border-box;
+      box-shadow: -9px 7px 0px $teksialBlue;
+      border: 1px solid $teksialBlue;
+    }
+  }
+  &.white {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    &:hover {
+      font-weight: 600;
+      box-sizing: border-box;
+      box-shadow: -9px 7px 0px #ffffff;
+    }
+  }
 }

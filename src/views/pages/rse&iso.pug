@@ -1,0 +1,25 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - Nos offres
+
+block basicSeo
+  meta(name='description' content='Rse & iso')
+  meta(name='author' content='')
+
+block manifestBrowserconfigFiles
+  link(rel='manifest', href='../manifest.json')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+    //- Header
+    +header('rse&iso')
+
+    //- Section Intro
+    +intro
+        block introContent
+
+    //- Desktop page
+    section
+        h1 Rse & iso
+

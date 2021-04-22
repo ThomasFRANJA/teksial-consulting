@@ -1,20 +1,56 @@
 /* src/assets/styles/components/_footer.scss  */
 
 .footer {
-  background: $lightseagreen;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 320px;
-  padding: 10px;
-  border-top-left-radius: 5px;
-  text-align: center;
-  p {
-    font-size: 12px;
+  box-shadow: inset 0px 4px 4px rgba(45, 47, 44, 0.25);
+  padding: 50px 72px 20px 72px !important;
+  &-company{
+    font-weight: 500;
+    &_logo{
+      width: 170px;
+    }
+    & > p {
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    &_contact {
+      a[href^="mailto"],
+      a[href^="tel"] {
+        color: $teksialBlue;
+        font-style: normal;
+      }
+    }
+    &_rs {
+      display: flex;
+      margin-top: 33px;
+      & a:first-child{
+        margin-right: 15px;
+      }
+    }
   }
-  a {
-    font-size: 15px;
-    font-weight: bold;
+  &-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    &-item{
+      & a:hover{
+        color: $teksialBlue;
+      }
+      &_title{
+        color: $teksialGrey;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      &_list {
+        margin-top: 25px !important;
+        & li {
+          margin-bottom: 15px;
+          & a {
+            font-weight: 300;
+            color: rgba(45, 47, 44, .5);
+          }
+        }
+      }
+    }
   }
 }
 

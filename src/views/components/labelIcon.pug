@@ -1,0 +1,10 @@
+mixin labelIcon(img, labelTxt='La Défense, 92060', float)
+    .labelIcon(
+        class=float === 'float' ? 'float' : ''
+        )
+        figure
+            img(
+                src=require(`images/${img}`) 
+                alt=`picture of ${img}`
+                )
+        span=labelTxt

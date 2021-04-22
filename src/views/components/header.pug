@@ -1,0 +1,25 @@
+//- include ./button.pug
+
+mixin header(currentPage)
+  header.header.container-fluid
+    nav.header-nav.row.middle-xs
+      .header-nav-logo.col-xs-1
+        a(href='/')
+          figure
+            img(src=require('images/tc-glb-logo-InWhite.svg'))
+      .header-nav-menu.col-xs-11
+        ul.row.middle-xs.end-xs
+          li(class=currentPage === 'apropos' ? 'active' : '').border
+            a(href='/apropos') A propos
+          li(class=currentPage === 'nosoffres' ? 'active' : '').border
+            a(href='/nosoffres') Nos Offres
+          li(class=currentPage === 'nousrejoindre' ? 'active' : '').border
+            a(href='/nousrejoindre') Nous rejoindre
+          li(class=currentPage === 'notreactus' ? 'active' : '').border
+            a(href='/notreactus') Notre actus
+          li(class=currentPage === 'rse&iso' ? 'active' : '').border
+            a(href='/rse&iso') RSE & ISO
+          li
+            +button('/contact', title, 'white')
+          //- li(class=currentPage === 'apropos2' ? 'active' : '').border
+          //-   a(href='/apropos2/exempleapropos2') A propos 2

@@ -1,0 +1,12 @@
+mixin titleCenterTxt(valueColor, title='Teksial Consulting', wordBlue="c\'est", text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+    //- Active curentColor style = value props blue
+    .titleCenter.row.center-xs
+        .titleCenter_content.col-xs-8(class=valueColor === 'blue' ? 'regGrey' : '')
+            h2=title
+                |
+                span(class=valueColor === 'blue' ? 'blue' : '')
+                    | &nbsp;#{wordBlue}
+            if block
+                block
+            else
+                p=text

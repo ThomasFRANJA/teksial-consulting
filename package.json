@@ -1,12 +1,12 @@
 {
-  "name": "my-project",
+  "name": "teksial-consulting",
   "version": "0.0.1",
-  "description": "My project description",
+  "description": "Teksial Consulting project refonte",
   "author": {
-		"name" : "Edgardo Ramírez León",
-		"email" : "me@edgardo.com",
-		"url" : "https://edgardorl.com"
-	},
+    "name": "FRANJA Thomas",
+    "email": "thomas.franja@teksial.com.com",
+    "url": "https://teksial-consulting.com"
+  },
   "main": "app.js",
   "repository": "git@github.com:my-user/my-repo.git",
   "license": "MIT",
@@ -42,6 +42,8 @@
     "rimraf": "^2.6.3",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^5.0.0",
     "terser-webpack-plugin": "^1.2.2",
     "tslib": "^1.9.0",
     "url-loader": "^1.0.1",

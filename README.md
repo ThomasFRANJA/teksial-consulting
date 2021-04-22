@@ -5,13 +5,20 @@ The purpose of this Webpack Starter is to allow people to create websites withou
 
 With this starter you can have your URLs clean by removing the .html extension. For example:
 
+<!-- This home page and entry point of website -->
+- *website.com/index* 
+- *website.com/apropos*
+- *website.com/nosoffres*
+- *website.com/nousrejoindre*
+- *website.com/rse1iso*
 - *website.com/contact*
-- *website.com/blog*
-- *website.com/profile*
+
+<!-- View of all components of projects -->
+- *website.com/all-components*
 
 ## Demo
 
-🔗 https://webpack-starter.netlify.app/
+🔗 https://teksial-consulting.netlify.app/
 
 ## Technologies used
 
@@ -52,10 +59,4 @@ Any contribution is well received. You only have to fork this repo and submit yo
 
 ## Terms of use
 
-Feel free to use it in the way you want. Just be sure to add a link/mention to the original repository or the author, me 🙂
-
-## Donations
-
-A donation to buy more coffee is always well received if this starter helped you to create your website!
-
-<a href="https://www.buymeacoffee.com/edgardo" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+Feel free to use it in the way you want. Just be sure to add a link/mention to the original repository or the author, me(Webpack project creatded by Edgardo Ramírez León, *alias github name SoldierCorps*)

@@ -1,0 +1,31 @@
+.titleLeft {
+    height: 100%;   
+    &_content {
+        margin: 0 44px 0 136px;
+        color: #ffffff;
+        font-weight: 300;
+        &.regGrey{
+            color: $teksialGrey;
+            font-weight: 400;
+            & h1 {
+                font-weight: 400;
+            }
+        }
+        & h1{
+            font-size: 52px;
+            font-weight: 600;
+            line-height: 55px;
+            & span{
+                font-size: 60px;
+                font-weight: 700;
+            }
+            & span.blue {
+                color: $teksialBlue;
+            }
+        }
+        & p{
+            margin-top: 35px;
+            line-height: 25px;
+        }
+    }
+}

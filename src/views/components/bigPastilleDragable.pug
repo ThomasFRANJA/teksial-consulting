@@ -1,0 +1,37 @@
+mixin bigPastilleDragable(textValue='Vous accompagner avec une méthode unique de management', urlPicture, currentDragable)
+    .bigPastilleDragable
+        .bigPastilleDragable-content
+            .bigPastilleDragable-content_title
+                p=textValue
+            .bigPastilleDragable-content_list
+                //- if currentDragable === 'security'
+                //- if currentDragable === 'speed up'
+                img(src=require('images/tc-glb-arrowWhite.svg') alt='big-pastille-dragable-arrow-icon')
+                if currentDragable === 'security'
+                    ul
+                        li
+                            p Un accompagnement tout au long de vos projets
+                        li
+                            p Une assistance à travers nos conseils dans vos démarches
+                        li
+                            p Une bonne mise en oeuvre GARANTIE
+                else if currentDragable === 'speed up'
+                    ul
+                        li
+                            p 90 consultans expérimentés & spécialisés valorisent vos projets
+                        li
+                            p Notre but est d'optimiser la rentabilité de l'investissement réalisé !
+                else
+                    ul
+                        li
+                            p Force d'état d'esprit, de partage de connaissances & des compétences
+                        li
+                            p On vous propose un service innovant & sur mesure !
+        if urlPicture === 'picture2'
+            +littlePastille('absolute', 'tc-components-lb-security.svg')
+        else if urlPicture === 'picture3'
+            +littlePastille('absolute', 'tc-components-lb-speedUp.svg')
+        else
+            +littlePastille('absolute', 'tc-components-lb-accompany.svg')
+                
+        

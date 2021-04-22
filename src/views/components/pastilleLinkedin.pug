@@ -1,0 +1,48 @@
+mixin pastilleLinkedin(profilImg, roleName='R.Département Consulting', name='Ludovic LAPLACE')
+    .pastilleLinkedin
+        figure.pastilleLinkedin_picture
+            case profilImg
+                when 'LL'
+                    img(
+                        src=require('images/tc-apropos-section02-Ludovic-LAPLACE.jpeg')
+                        alt='profil de #{profilImg}'
+                    )
+                when 'JM'
+                    img(
+                        src=require('images/tc-apropos-section02-Jacqueline-MARTIN.jpeg')
+                        alt='profil de #{profilImg}'
+                    )
+                when 'NQ'
+                    img(
+                        src=require('images/tc-apropos-section02-Naoile-QUALLOUH.jpeg')
+                        alt='profil de #{profilImg}'
+                    )
+                //- when 'SJ'
+                //-     img(
+                //-         src=require('images/tc-apropos-section02-Stephanie-JEGO.jpeg')
+                //-         alt='profil de #{profilImg}'
+                //-     )
+                when 'TF'
+                    img(
+                        src=require('images/tc-apropos-section02-Thomas-FRANJA.jpeg')
+                        alt='profil de #{profilImg}'
+                    )
+                default
+                    img(
+                        src=require('images/tc-apropos-section02-profile.png')
+                        alt='profil de #{profilImg}'
+                    )
+        .pastilleLinkedin_link
+            a(
+                href="#"
+                )
+                figure
+                    img(
+                        src=require('images/tc-apropos-linkedin.svg')
+                        alt="picto linkedin profil")
+    .pastilleLinkedin-profil
+        span #{roleName}
+        |
+        br
+        |
+        span #{name}

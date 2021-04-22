@@ -1,0 +1,4 @@
+mixin littlePastille(active, urlPath='tc-components-lb-experience.svg')
+    .littlePastille(class=active === 'absolute' ? 'active' : '')
+        figure
+            img(src=require(`images/${urlPath}`) alt=`picto ${urlPath.replace(`.svg`, '')}`)

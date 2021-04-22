@@ -1,0 +1,9 @@
+.labelIcon{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    text-transform: capitalize;
+    & figure{
+        margin-right: 15px;
+    }
+}
