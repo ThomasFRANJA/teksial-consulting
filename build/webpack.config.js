@@ -32,6 +32,7 @@ module.exports = env => {
         source: path.resolve(__dirname, '../src'), // Relative path of src
         images: path.resolve(__dirname, '../src/assets/images'), // Relative path of images
         fonts: path.resolve(__dirname, '../src/assets/fonts'), // Relative path of fonts
+        // fonts: path.resolve(__dirname, '../src/assets/fonts'), // Relative path of fonts
       }
     },
 
@@ -137,7 +138,8 @@ module.exports = env => {
         { from: '../browserconfig.xml', to: 'browserconfig.xml' },
         { from: 'assets/images/favicons/android-chrome-192x192.png', to: 'assets/images/android-chrome-192x192.png' },
         { from: 'assets/images/favicons/android-chrome-256x256.png', to: 'assets/images/android-chrome-256x256.png' },
-        { from: 'assets/images/favicons/mstile-150x150.png', to: 'assets/images/mstile-150x150.png' }
+        { from: 'assets/images/favicons/mstile-150x150.png', to: 'assets/images/mstile-150x150.png' },
+        { from: 'assets/styles/flexboxgrid.min.css', to: 'assets/styles/flexboxgrid.min.css' },
       ]),
       new MiniCssExtractPlugin({
         filename: 'assets/css/[name].[hash:7].bundle.css',
