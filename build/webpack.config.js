@@ -156,7 +156,6 @@ module.exports = env => {
       }),
 
       ...utils.pages(env),
-      ...utils.pages(env, '/'),
 
       new webpack.ProvidePlugin({
         $: 'jquery',
