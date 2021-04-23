@@ -6,27 +6,27 @@
     top: 0;
     z-index: -1;
     &.activeBackgroundHome{
-        background: url('/assets/images/tc-home-intro-background.jpg') center, no-repeat;
+        background: url('assets/images/tc-home-intro-background.jpg') center, no-repeat;
         background-size: cover;
     }
     &.activeBackgroundAbout{
-        background: url('/assets/images/tc-apropos-intro-background.jpg') center, no-repeat;
+        background: url('assets/images/tc-apropos-intro-background.jpg') center, no-repeat;
         background-size: cover;
     }
     &.activeBackgroundOffers{
-        background: url('/assets/images/tc-nosoffres-intro-background.jpg') center, no-repeat;
+        background: url('assets/images/tc-nosoffres-intro-background.jpg') center, no-repeat;
         background-size: cover;
     }
     &.activeBackgroundJoinUs{
-        background: url('/assets/images/tc-nsrejoindre-intro-background.jpg') center, no-repeat;
+        background: url('assets/images/tc-nsrejoindre-intro-background.jpg') center, no-repeat;
         background-size: cover;
     }
     &.activeBackgroundRseIso{
-        background: url('/assets/images/tc-home-intro-background.jpg') center, no-repeat;
+        background: url('assets/images/tc-home-intro-background.jpg') center, no-repeat;
         background-size: cover;
     }
     &.activeBackgroundContact{
-        background: url('/assets/images/tc-home-intro-background.jpg') center, no-repeat;
+        background: url('assets/images/tc-home-intro-background.jpg') center, no-repeat;
         background-size: cover;
     }
     &.default{
