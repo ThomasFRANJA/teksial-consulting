@@ -140,7 +140,7 @@ module.exports = env => {
         { from: 'assets/images/favicons/mstile-150x150.png', to: 'assets/images/mstile-150x150.png' }
       ]),
       new MiniCssExtractPlugin({
-        filename: '/[name].[hash:7].bundle.css',
+        filename: 'assets/css/[name].[hash:7].bundle.css',
         chunkFilename: '[id].css',
       }),
 
@@ -156,7 +156,7 @@ module.exports = env => {
       }),
 
       ...utils.pages(env),
-      // ...utils.pages(env, '/'),
+      ...utils.pages(env, '/'),
 
       new webpack.ProvidePlugin({
         $: 'jquery',
