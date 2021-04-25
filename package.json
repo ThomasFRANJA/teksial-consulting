@@ -10,12 +10,14 @@
   "main": "app.js",
   "repository": "git@github.com:my-user/my-repo.git",
   "license": "MIT",
+  "homepage": "https://thomasfranja.github.io/tc-website",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && webpack --config ./build/webpack.config.js --env.NODE_ENV=development --mode=development --progress",
     "dev-network": "webpack-dev-server --config ./build/webpack.config.js --env.NODE_ENV=development --mode=development --progress --open --host 0.0.0.0",
     "dev": "webpack-dev-server --config ./build/webpack.config.js -env.NODE_ENV=development --mode=development --progress --open",
-    "prod": "rimraf dist && webpack --config ./build/webpack.config.js --env.NODE_ENV=production --mode=production -p --progress "
+    "prod": "rimraf dist && webpack --config ./build/webpack.config.js --env.NODE_ENV=production --mode=production -p --progress ",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "autoprefixer": "^8.2.0",
@@ -53,6 +55,7 @@
     "webpack-notifier": "^1.6.0"
   },
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "gsap": "^1.20.4",
     "jquery": "^3.5.0",
     "normalize.css": "^8.0.0",
