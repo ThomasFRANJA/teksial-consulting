@@ -1,9 +1,17 @@
-/* src/assets/styles/pages/_contact.scss  */
+/* src/assets/styles/pages/_apropos.scss  */
 
-.contact__page {
+#about{
+  &-section02 {
+    // background-color: blue;
+    & .titleLeft_content {
+      margin-left: 33px;
+    }
 
+    & .cardCheck {
+      margin-bottom: 50px;
+    }
+  }
 }
-
 
 /*
   Responsive

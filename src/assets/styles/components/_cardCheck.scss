@@ -1,0 +1,16 @@
+.cardCheck{
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 159, 227, 0.3);
+    box-sizing: border-box;
+    box-shadow: 10px 10px 4px rgba(0, 159, 227, 0.5);
+    position: relative;
+    text-align: left;
+    & figure {
+        position: absolute;
+        top: -28px;
+        left: -28px;
+    }
+    & p {
+        margin: 16px 120px 16px 55px;
+    }
+}

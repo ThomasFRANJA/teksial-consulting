@@ -1,7 +1,8 @@
 mixin titleLeftTxt(currentBlue, title='Teksial', subTitle='Consulting,', text='Accompagne les entreprises des secteurs de l’énergie, de l’industrie dans la mise en oeuvre de vos projets IT, Digital & Marketing.')
     //- Active curentColor style = value props blue
-    .titleLeft.row.middle-xs
-        .titleLeft_content.col-xs-6(class=currentBlue === 'blue' ? 'regGrey' : '')
+    //- .titleLeft.row.middle-xs
+    .titleLeft
+        .titleLeft_content(class=currentBlue === 'blue' ? 'regGrey' : '')
             h1=title 
                 |
                 br

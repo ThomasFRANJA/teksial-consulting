@@ -9,50 +9,50 @@ block manifestBrowserconfigFiles
 
 block content
   //- Section Intro
-  .section01
+  section#home-section01
     +intro('home', 'home')
 
   //- Section 2
-  section.section02.container-fluid
+  section#home-section02.container-fluid
       +titleCenterTxt('blue')
         .noBlock
       .row.betwen-xs
-        .col-xs-4.section02_item
+        .col-xs-4#home-section02_item
           +bigPastille()
-        .col-xs-4.section02_item
+        .col-xs-4#home-section02_item
           +bigPastille('90', 'Consultants', 'picture2')
-        .col-xs-4.section02_item
+        .col-xs-4#home-section02_item
           +bigPastille('85', '% Croissance', 'picture3')
 
   //- Section 3
-  section.section03.container-fluid
+  section#home-section03.container-fluid
     .row.between-xs.middle-xs
-      .col-xs-6.section03_background
+      .col-xs-6#home-section03_background
         figure
           img(src=require('images/tc-home-section03-img.jpg') alt='background-section03-accompany')
       .col-xs-6
         +titleLeftTxt('blue','On vous,','accompagne')
         +button('#', 'En savoir plus')
         .row.between-xs
-          .col-xs-3.section03_item
+          .col-xs-3#home-section03_item
             +littlePastille(active, 'tc-components-lb-transitionDigitale.svg')
             span Transition 
               |
               br
               | Digitale
-          .col-xs-3.section03_item
+          .col-xs-3#home-section03_item
             +littlePastille(active, 'tc-components-lb-exploitationData.svg')
             span Exploitation 
               |
               br
               | Data
-          .col-xs-3.section03_item
+          .col-xs-3#home-section03_item
             +littlePastille(active, 'tc-components-lb-developApplis.svg')
             span Développer 
               |
               br
               | Vos applis
-          .col-xs-3.section03_item
+          .col-xs-3#home-section03_item
             +littlePastille(active, 'tc-components-lb-success.svg')
             span Gérer & piloter 
               |
@@ -60,11 +60,11 @@ block content
               | Vos projets
 
   //- Section 4
-  section.section04.container-fluid
-    .section04-title
+  section#home-section04.container-fluid
+    #home-section04-title
       +titleCenterTxt(valueColor, 'Nos', 'offres')
       +button(href, 'En savoir plus', 'white')
-    .section04-item
+    #home-section04-item
       .row.center-xs
         .col-xs-3
           +pictureitem('white', img, titleInfos)
@@ -78,6 +78,12 @@ block content
         .col-xs-3
           +pictureitem('white', 'tc-home-section04-item04.png', 'Digitale & Marketing')
             p
+  
   //- Section 5
+  section#home-section05.container-fluid
+    #home-section05-title
+      +titleCenterTxt('blue', 'Notre', 'actualité')
+      +button(href, 'Découvrez notre actus')
+
   //- Section 6
 
