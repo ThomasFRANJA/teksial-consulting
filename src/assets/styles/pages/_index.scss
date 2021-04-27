@@ -1,9 +1,9 @@
 /* src/assets/styles/pages/_index.scss  */
 #home {
-  &-section01{
+  &.section01{
   }
   
-  &-section02 {
+  &.section02 {
     overflow: hidden;
     background: linear-gradient(360deg, rgba(0, 159, 227, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
     height: 485px;
@@ -17,7 +17,7 @@
     }
   }
   
-  &-section03 {
+  &.section03 {
     // padding: 106px 72px;
     padding-bottom: 50px;
     &_background {
@@ -49,7 +49,7 @@
     }
   }
   
-  &-section04 {
+  &.section04 {
     background: linear-gradient(180deg, rgba(67, 163, 85, 0.2) 0%, #FFFFFF 100%), rgba(0, 159, 227, 0.6);
     box-shadow: inset 0px 4px 4px rgba(45, 47, 44, 0.25);
     &-title {
@@ -70,7 +70,7 @@
       }  
   }
   
-  &-section05 {
+  &.section05 {
     text-align: center;
   }
   

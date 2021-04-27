@@ -1,5 +1,4 @@
 //- include ./button.pug
-
 mixin header(currentPage)
   header.header.container-fluid
     nav.header-nav.row.middle-xs
@@ -21,5 +20,28 @@ mixin header(currentPage)
             a(href='/rse&iso') RSE & ISO
           li
             +button('/contact', title, 'white')
-          //- li(class=currentPage === 'apropos2' ? 'active' : '').border
-          //-   a(href='/apropos2/exempleapropos2') A propos 2
+        //- - const val = [{
+        //-   {
+        //-     name: 'A propos',
+        //-     link : '/apropos',
+        //-   },
+        //-   {
+        //-     name: 'Nos offres',
+        //-     link : '/nosoffres',
+        //-   },
+        //-   {
+        //-     name: 'nous rejoindre',
+        //-     link : '/nousrejoindre',
+        //-   },
+        //-   {
+        //-     name: 'rse&iso',
+        //-     link : '/rse&iso',
+        //-   },
+        //-   {
+        //-     name: 'contact',
+        //-     link : '/contact',
+        //-   }
+        //- }];
+          //- each values in val.length
+          //-   li(class=values.name ? 'active' : '').border
+          //-     a(href=values.link)= values.name

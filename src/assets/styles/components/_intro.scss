@@ -6,7 +6,7 @@
     top: 0;
     z-index: -1;
     &.activeBackgroundHome{
-        background: url('/assets/images/tc-home-intro-background.jpg') center, no-repeat;
+        background: url('~images/tc-home-intro-background.jpg') center, no-repeat;
         background-size: cover;
     }
     &.activeBackgroundAbout{

@@ -38,12 +38,12 @@ li {
 
 #home,
 #about {
-  &-section02,
-  &-section03,
-  &-section04,
-  &-section05,
-  &-section06,
-  &-section07 {
+  &.section02,
+  &.section03,
+  &.section04,
+  &.section05,
+  &.section06,
+  &.section07 {
     padding-top: 70px;
     // padding-bottom: 50px;
   }

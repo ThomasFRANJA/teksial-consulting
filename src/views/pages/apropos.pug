@@ -12,14 +12,13 @@ block manifestBrowserconfigFiles
   meta(name='msapplication-config' content='../browserconfig.xml')
 
 block content
-
   +header('apropos')
 
-  section#about-section01
+  section#about.section01
     +intro('apropos')
     block introContent
 
-  section#about-section02.container-fluid
+  section#about.section02.container-fluid
     .row.between-xs
       .col-xs-7
         +titleLeftTxt('blue', 'Pourquoi nous faire,', 'confiance', 'Teksial CONSULTING, prestataire de services de conseil, vous accompagne dans la mise en oeuvre de vos projets IT, DIGITAL & MARKETING avec succès. Connaissance avancée du projet d\'entreprise, culturellement et stratégiquement beaucoup plus alignées avec les enjeux.Des intérêts communs : confiance dans la mise en place de l\'accompagnement & la transition DIGITALE (Optimisez, simplifiez, Digitalisez).')
@@ -27,7 +26,8 @@ block content
         +cardCheck()
         +cardCheck()
         +cardCheck()
-  section#about-section03.container-fluid
+
+  section#about.section03.container-fluid
     +titleCenterTxt('blue', 'Mais c\'est', 'aussi')
       p
     .row.center-xs
@@ -37,3 +37,15 @@ block content
         +bigPastilleDragable('Sécuriser vos solutions avec notre expertise', 'picture2', 'security')
       .col-xs-4
         +bigPastilleDragable('Accélérer votre business avec des solutions adaptées à vos besoins', 'picture3', 'speed up')
+
+  section#about.section04.container-fluid
+    +titleCenterTxt('blue', 'On s\'engage à vous', 'accompagner', 'Teksial s’engage à vous accompagner sur vos projets à transition digitale déterminés dans les processus spécifiques. Grâce à nos équipes et des techniques informatiques de pointe mises à disposition par nos services.')
+    .row.between-xs 
+      .col-xs-3
+        +pictureitem(theme, 'tc-components-lb-transitionDigitale.svg', 'transition digitale', 'Optimisez, simplifiez & digitalisez')
+      .col-xs-3
+        +pictureitem(theme, 'tc-components-lb-exploitationData.svg', 'Exploitation data', 'Contrôlez, analysez & décidez')
+      .col-xs-3
+        +pictureitem(theme, 'tc-components-lb-developApplis.svg', 'Développer vos apps', 'Hardcoding, Make zen project')
+      .col-xs-3
+        +pictureitem(theme, 'tc-components-lb-success.svg', 'Gérer & piloter vos projets', 'Optimisez, simplifiez & digitalisez')

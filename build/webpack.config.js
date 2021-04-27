@@ -33,7 +33,11 @@ module.exports = env => {
         images: path.resolve(__dirname, '../src/assets/images'), // Relative path of images
         fonts: path.resolve(__dirname, '../src/assets/fonts'), // Relative path of fonts
         // fonts: path.resolve(__dirname, '../src/assets/fonts'), // Relative path of fonts
-      }
+      },
+      // modules: [
+      //   path.resolve(__dirname, 'assets/images'),
+      //   "node_modules"
+      // ],
     },
 
     /*

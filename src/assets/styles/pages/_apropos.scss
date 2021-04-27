@@ -1,8 +1,7 @@
 /* src/assets/styles/pages/_apropos.scss  */
 
 #about{
-  &-section02 {
-    // background-color: blue;
+  &.section02 {
     & .titleLeft_content {
       margin-left: 33px;
     }
@@ -10,6 +9,18 @@
     & .cardCheck {
       margin-bottom: 50px;
     }
+  }
+
+  &.section03 {
+    background: linear-gradient(360deg, rgba(0, 159, 227, 0.15) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+    padding-bottom: 80px;
+  }
+
+  &.section04 {
+    & .pictureItem-description {
+      margin: 0 auto 50px;
+      text-align: center;
+      }
   }
 }
 
